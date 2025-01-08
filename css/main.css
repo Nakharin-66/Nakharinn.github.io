@@ -832,7 +832,7 @@ section,
   padding: 220px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url("https://artralux.co.th/wp-content/uploads/2023/06/cover%E0%B8%AD%E0%B8%B1%E0%B8%9B%E0%B9%80%E0%B8%94%E0%B8%97%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%A7%E0%B8%B5%E0%B8%8B%E0%B9%88%E0%B8%B2%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99.jpg");
+  background: url("https://artralux.co.th/wp-content/uploads/2023/06/cover%E0%B8%AD%E0%B8%B1%E0%B8%9B%E0%B9%80%E0%B8%94%E0%B8%97%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%A7%E0%B8%B5%E0%B8%8B%E0%B9%88%E0%B8%B2%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99.jpg") no-repeat center center;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
@@ -903,7 +903,23 @@ section,
   height: 500px;
 }
 
-@media (max-width: 640px) {
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -917,16 +933,6 @@ section,
 
   .hero .btn-get-started .hero .btn-watch-video {
     font-size: 13px;
-  }
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(-10px);
   }
 }
 
