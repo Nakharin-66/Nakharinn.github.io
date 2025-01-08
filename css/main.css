@@ -920,6 +920,32 @@ section,
     background-position: center;
   }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+      font-size: 13px;
+    }
+  }
+
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
